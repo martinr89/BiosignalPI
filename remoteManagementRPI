@@ -1,0 +1,17 @@
+connect to the RPI through SSH
+
+for Martin-laptop
+ssh pi@10.42.0.42
+pwd: raspberry
+
+in ssh shell
+
+kill old tightvnc windows
+/usr/bin/vncserver -kill :0
+
+starting vnc 
+vncserver :0 -geometry 1280x800 -depth 16
+
+connect through vnc
+10.42.0.42:0
+pwd 45Bagar1
