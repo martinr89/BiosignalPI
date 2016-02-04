@@ -1,4 +1,4 @@
-[Link to Software Documentation](http://martinr89.github.io)
+[Link to Software Documentation](http://martinr89.github.io/BiosignalPI)
 
 BioSignal-Pi
 ============
