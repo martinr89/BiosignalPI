@@ -9,6 +9,7 @@ Documentation/
 build*/
 build/
 *~
+Documentation/
 CMakeLists.txt.user
 
 
