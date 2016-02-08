@@ -1,8 +1,6 @@
 BioSignal-Pi
 ============
-
 [Link to Software Documentation](http://martinr89.github.io/BiosignalPI)
-
 ============
 Biosignal PI aim is to provide a flexible and affordable open-source platform and tools for physiological and biological measurements such as blood pressure, blood glucose, weight, body composition, activity monitoring, and brain and cardiac activity.In first step, electrocardiogram (ECG) with wide usage in diagnosing and monitoring of heart disease and even in monitoring the autonomic nervous system through heart-rate variability (HRV) is developed.
 
@@ -10,9 +8,10 @@ This version provides 5-12 leads ECG and respiration measurement system based on
 
 
 
-#System Requirements
-In order to be able to cross-compile the Raspberry Pi(RPI) from an workstation it is neccessary to utilize a cross-compiler this project has used the arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian toolchain. 
+###System Requirements
+In order to be able to cross-compile the Raspberry Pi(RPI) from an workstation it is neccessary to utilize a cross-compiler this project has used the arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian toolchain.
 Cloned from https://github.com/raspberrypi/tools
+
 
 To build the Biosignal PI software the system needs to have the following software and libraries installed:
 * QT5 (Biosignal PI has been tested with  5.5 and 5.6 both older versions of QT5 might work.) 
@@ -22,26 +21,27 @@ To build the Biosignal PI software the system needs to have the following softwa
 * libpifacecad c-library used for PiFaceCad
 * libmcp23s17 c-library used for PiFaceCad
 
-#Building the Biosignal PI software
+###Building the Biosignal PI software
 The software is built through the use of CMake.
- $ mkdir [buildFolder]  
+    $ mkdir [buildFolder]  
 The buildFolder is just an example name this can be set to anything. 
- $ cd [buildFolder]
- $ cmake -C ../[local-settings-file].cmake ../src/
+    $ cd [buildFolder]
+    $ cmake -C ../[local-settings-file].cmake ../src/
 local-settings-file is a file that should be set to tell CMake about the path to the needed dependecies see the different .cmake files in the main folder for example.
- $ make 
+    $ make 
 
  
 
-#To build the Documentation
- $ make docs 
+####Build the Documentation
+    $ make docs 
 This will create the documentation in the folder Documentation
 
-# Build tests
- $ make tests
+#### Build tests
+    $ make tests
+This will create the tests in the Tests folder of your build folder.
 
 
-# For information on how to setup the workstation for cross-compilation and installing Qt se
+####For information on how to setup the workstation for cross-compilation and installing Qt to workstation and Raspberry see wiki
 
 
 
